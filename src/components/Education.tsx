@@ -13,7 +13,7 @@ const education = [
     location: "Ahmedabad, Gujarat",
   },
   {
-    degree: "Bachelor of Computer Applications (BCA) — CGPA : 8.47",
+    degree: "Bachelor of Computer Applications (BCA) — CGPA : 8.47/10",
     status: "Completed",
     institute: "LJ University",
     year: "Apr 2025",
