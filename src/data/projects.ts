@@ -87,8 +87,8 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Postman",
     ],
-    github: "",
-    liveDemo: "",
+    github: "https://github.com/harshrajsinhvaghela7586/Smart-Campus-Assistant-MERN",
+    liveDemo: "https://smart-campus-assistant-eight.vercel.app",
     status: "Coming Soon",
   },
   {
