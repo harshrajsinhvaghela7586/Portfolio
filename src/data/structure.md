@@ -1,0 +1,40 @@
+```
+└── 📁portfolio
+    └── 📁public
+        └── 📁projects
+            ├── digital-wardrobe.png
+            ├── smart-campus-mern.png
+            ├── smart-campus-react-native.png
+            ├── techstore.png
+        ├── resume.pdf
+    └── 📁src
+        └── 📁app
+            ├── globals.css
+            ├── layout.tsx
+            ├── page.tsx
+        └── 📁components
+            ├── About.tsx
+            ├── Contact.tsx
+            ├── Education.tsx
+            ├── Footer.tsx
+            ├── Hero.tsx
+            ├── Navbar.tsx
+            ├── ProjectCard.tsx
+            ├── Projects.tsx
+            ├── ProjectTimeline.tsx
+            ├── SectionHeading.tsx
+            ├── Skills.tsx
+        └── 📁data
+            ├── projects.ts
+            ├── skills.ts
+        └── 📁lib
+            ├── utils.ts
+    ├── next-env.d.ts
+    ├── next.config.ts
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── README.md
+    ├── tailwind.config.ts
+    └── tsconfig.json
+```
