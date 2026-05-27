@@ -15,6 +15,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  name: "SpendPilot - AI Spend Optimization Platform",
+  date: "May 2026",
+  description:
+    "An AI-powered SaaS platform that analyzes AI tool subscriptions, generates optimization insights, compares pricing plans, and helps teams reduce unnecessary AI spending using Gemini AI.",
+  image: "/projects/spendpilot.png",
+  features: [
+    "AI spend audit system",
+    "Gemini AI generated insights",
+    "Monthly and annual savings calculation",
+    "Pricing comparison engine",
+    "Dynamic plan recommendations",
+    "Firebase integration",
+    "Shareable audit reports",
+    "Responsive SaaS UI",
+    "Lighthouse optimized frontend",
+    "Modern dark dashboard design",
+  ],
+  techStack: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Firebase",
+    "Gemini API",
+    "Shadcn UI",
+    "Framer Motion",
+    "Vercel",
+  ],
+  github: "https://github.com/harshrajsinhvaghela7586/spendpilot-ai-audit",
+  liveDemo: "https://spendpilot-ai-audit-wheat.vercel.app/",
+  status: "Live",
+  isFeatured: true,
+},
+  {
     name: "TechStore MERN - Full Stack E-Commerce Platform",
     date: "May 2026",
     description:
@@ -140,9 +173,16 @@ export const projects: Project[] = [
     liveDemo: "",
     status: "Coming Soon",
   },
+
 ];
 
 export const timelineProjects = [
+  {
+  period: "May 2026",
+  title: "SpendPilot - AI Spend Optimization Platform",
+  description:
+    "Built an AI-powered SaaS platform for optimizing AI subscription costs using Gemini AI, Firebase, dynamic pricing analysis, and responsive dashboards.",
+},
  {
   period: "Jan 2026 - Feb 2026",
   title: "Digital Wardrobe Assistant",

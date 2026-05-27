@@ -17,6 +17,8 @@ export const skillCategories: SkillCategory[] = [
       "Shadcn UI",
       "Framer Motion",
       "Responsive UI",
+      "SaaS UI Design",
+"Performance Optimization",
     ],
   },
   {
@@ -30,6 +32,7 @@ export const skillCategories: SkillCategory[] = [
     "API Testing",
     "Python",
     "Django",
+    "Firebase Firestore",
   ],
 },
   {
@@ -82,6 +85,9 @@ export const skillCategories: SkillCategory[] = [
       "Docker Basics",
       "GitHub Actions Basics",
       "Linux Basics",
+      "Lighthouse Optimization",
+"AI Integration",
+"SaaS Architecture",
     ],
   },
 ];
