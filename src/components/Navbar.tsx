@@ -24,7 +24,7 @@ export default function Navbar() {
       </nav>
       {open && <div className="border-t border-white/10 bg-slate-950/95 px-4 py-5 lg:hidden"><div className="flex flex-col gap-4">
         {navLinks.map((link) => <a key={link.href} href={link.href} onClick={() => setOpen(false)} className="rounded-xl px-3 py-2 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-cyan-300">{link.label}</a>)}
-        <a href="/resume.pdf" download className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-3 text-sm font-bold text-slate-950"><Download size={16}/>Download Resume</a>
+        <a href="/public/Harshrajsinh_Vaghela_Resume.pdf" download className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-3 text-sm font-bold text-slate-950"><Download size={16}/>Download Resume</a>
       </div></div>}
     </motion.header>
   );
