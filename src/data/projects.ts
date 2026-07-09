@@ -177,12 +177,6 @@ export const projects: Project[] = [
 ];
 
 export const timelineProjects = [
-  {
-  period: "May 2026",
-  title: "SpendPilot - AI Spend Optimization Platform",
-  description:
-    "Built an AI-powered SaaS platform for optimizing AI subscription costs using Gemini AI, Firebase, dynamic pricing analysis, and responsive dashboards.",
-},
  {
   period: "Jan 2026 - Feb 2026",
   title: "Digital Wardrobe Assistant",
@@ -207,4 +201,10 @@ export const timelineProjects = [
     description:
       "Built a production-style e-commerce platform with Stripe, admin dashboard, database cart, invoices, emails, and deployment.",
   },
+  {
+  period: "May 2026",
+  title: "SpendPilot - AI Spend Optimization Platform",
+  description:
+    "Built an AI-powered SaaS platform for optimizing AI subscription costs using Gemini AI, Firebase, dynamic pricing analysis, and responsive dashboards.",
+},
 ];
