@@ -7,34 +7,33 @@ import SectionHeading from "./SectionHeading";
 const highlights = [
   {
     icon: ShieldCheck,
-    title: "Authentication",
-    text: "JWT auth, protected routes, password hashing, and role-based access.",
+    title: "Secure Development",
+    text: "Authentication, authorization, protected routes, JWT, password hashing, and secure backend practices.",
   },
   {
     icon: CreditCard,
-    title: "Payments",
-    text: "Stripe Checkout, webhook-based order creation, and production flow debugging.",
+    title: "Real-World Projects",
+    text: "Built client-focused applications featuring dashboards, e-commerce workflows, payments, and dynamic content management.",
   },
   {
     icon: UploadCloud,
-    title: "Integrations",
-    text: "Cloudinary uploads, Nodemailer emails, and external API integrations.",
+    title: "API & Integrations",
+    text: "REST APIs, Cloudinary, email services, third-party integrations, and backend data management.",
   },
   {
     icon: Code2,
-    title: "Clean Structure",
-    text: "Reusable components, scalable folders, API testing, and deployment-ready code.",
+    title: "Clean Code",
+    text: "Reusable components, scalable architecture, responsive design, performance optimization, and deployment-ready applications.",
   },
 ];
-
 export default function About() {
   return (
     <section id="about" className="section-padding bg-slate-950">
       <div className="container-custom">
         <SectionHeading
           eyebrow="About"
-          title="Focused on production-style full-stack applications"
-          description="I build MERN and Next.js applications that are close to real-world workflows — authentication, dashboards, payments, uploads, emails, APIs, and deployment."
+          title="Building scalable full-stack web applications with modern technologies"
+          description="I develop modern MERN and Next.js applications with a strong focus on performance, clean architecture, responsive UI, secure backend development, and real-world user experience."
         />
 
         <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr]">
@@ -47,23 +46,25 @@ export default function About() {
           >
             <div className="space-y-5 text-base leading-8 text-slate-300 sm:text-lg">
               <p>
-                I am a MERN Stack Developer focused on building practical
-                full-stack applications using React.js, Next.js, Node.js,
-                Express.js, MongoDB, and TypeScript.
+                I am a Full Stack Developer with hands-on experience building modern web
+                applications using React.js, Next.js, Node.js, Express.js, MongoDB,
+                TypeScript, and Tailwind CSS. I enjoy transforming ideas into scalable,
+                responsive, and production-ready applications.
               </p>
 
               <p>
-                My strongest project is TechStore MERN, a production-style
-                e-commerce platform with authentication, database cart, Stripe
-                checkout, webhook-based order creation, invoice download,
-                email confirmation, admin dashboard, product CRUD, image
-                upload, and Vercel deployment.
+                During my internship, I have worked on real client projects, developing
+                responsive user interfaces, reusable components, dynamic pages, REST APIs,
+                authentication systems, dashboards, payment integrations, image uploads,
+                and performance optimization. I follow clean coding practices and focus on
+                writing maintainable, reusable, and efficient code.
               </p>
 
               <p>
-                I prefer building applications with clean UI, secure backend
-                logic, reusable components, structured APIs, and deployment-ready
-                implementation instead of only basic demo projects.
+                I continuously explore new technologies and improve my development
+                workflow through Git, modern deployment platforms, and industry best
+                practices. My goal is to build reliable software that delivers an excellent
+                user experience while solving real business problems.
               </p>
             </div>
           </motion.div>

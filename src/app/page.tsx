@@ -7,6 +7,7 @@ import ProjectTimeline from "../components/ProjectTimeline";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Experience from "../components/Experience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <ProjectTimeline />

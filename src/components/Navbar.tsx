@@ -4,7 +4,7 @@ import { Download, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { label: "Home", href: "#home" }, { label: "About", href: "#about" },
+  { label: "Home", href: "#home" }, { label: "About", href: "#about" },{ label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" }, { label: "Projects", href: "#projects" },
   { label: "Timeline", href: "#timeline" }, { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },

@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
         >
           <p className="mb-5 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200">
-            MERN Stack Developer
+            Full Stack Developer • MERN • Next.js
           </p>
 
           <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
@@ -58,8 +58,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            I build full-stack web applications with modern frontend, scalable
-            backend, secure authentication, payments, and cloud deployment.
+            I build scalable full-stack web applications using React, Next.js,
+            Node.js, Express.js, MongoDB, and TypeScript, delivering clean,
+            responsive user interfaces and secure backend solutions for
+            real-world applications.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -118,16 +120,17 @@ export default function Hero() {
             <div className="mb-6 h-32 rounded-3xl bg-gradient-to-br from-cyan-400/30 via-blue-500/20 to-indigo-500/30" />
 
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300">
-              Portfolio
+              Software Developer
             </p>
 
             <h3 className="mt-3 text-2xl font-bold text-white">
-              Full-Stack Developer
+              Full Stack Developer
             </h3>
 
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              React, Next.js, Node.js, MongoDB, APIs, authentication, payments,
-              dashboards, and deployment-focused project development.
+              Passionate about building modern web applications with scalable
+              architecture, REST APIs, authentication, responsive UI, cloud
+              integrations, and performance-focused development.
             </p>
           </div>
         </motion.div>
