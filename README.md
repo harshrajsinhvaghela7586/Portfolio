@@ -1,57 +1,81 @@
-# Harshrajsinh Vaghela: Portfolio
+# Harshrajsinh Vaghela | Portfolio
 
-Dark, editorial developer portfolio built with **Next.js (App Router) + TypeScript**. Every animation is hand-written: no Framer Motion, GSAP, Lenis or Tailwind. The whole motion layer is about 700 lines in `src/lib/motion`.
+Personal portfolio of a full-stack (MERN) developer based in Ahmedabad, India. Built with Next.js and TypeScript. All styling and animation is hand-written: no Tailwind, Framer Motion or other UI/animation libraries.
 
-## Run it
+**Live:** [harshrajsinh-vaghela.vercel.app](https://harshrajsinh-vaghela.vercel.app)
+
+## About me
+
+Full Stack Developer with five months of experience at Visezy Solutions, building and maintaining live websites and mobile apps with Next.js, React, React Native, Node.js, Express and MongoDB. I take features from Figma design to REST API to deployment, and I care about page speed and readable code.
+
+Currently looking for a full-time full-stack role (Ahmedabad or remote).
+
+- LinkedIn: [harshrajsinh-vaghela](https://www.linkedin.com/in/harshrajsinh-vaghela-a38bba300/)
+- Email: harshrajsinhvaghela7419@gmail.com
+
+## What's on the site
+
+| Section | What it shows |
+| --- | --- |
+| Hero | Name, role, rotating "what I build" line, quick stats |
+| About | Short intro, education, a few facts |
+| Experience | Internship at Visezy Solutions, performance results (Lighthouse 69 to 99, page load 4-5s to under 2s) and a list of the work I did there |
+| Work | Personal projects with live demos and source code |
+| Skills | Grouped by how well I know them: daily use, used in projects, foundations |
+| Contact | Email, phone, GitHub, LinkedIn, résumé download |
+
+The work I did at Visezy Solutions is private, so the site only describes it: no links, repositories or screenshots.
+
+## Personal projects
+
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [TechStore](https://github.com/harshrajsinhvaghela7586/TechStore-MERN) | Full-stack e-commerce: JWT auth, database cart, Stripe Checkout with webhook-created orders, invoices, admin panel | Next.js, Node.js, Express, MongoDB, Stripe |
+| [Smart Campus Assistant](https://github.com/harshrajsinhvaghela7586/Smart-Campus-Assistant-MERN) | Role-based campus platform for admin, faculty and students (attendance, scheduling, academics), plus a React Native app | MERN, React Native, GitHub Actions |
+| [SpendPilot](https://github.com/harshrajsinhvaghela7586/spendpilot-ai-audit) | AI spend audit tool that compares plans and suggests savings | Next.js, TypeScript, Firebase, Gemini API |
+| Digital Wardrobe | AI wardrobe assistant with membership tier and admin dashboard (private repo) | Django, Gemini API, Stripe, Docker |
+
+## Tech
+
+- **Framework:** Next.js (App Router), React, TypeScript
+- **Styling:** plain CSS with custom properties (`src/styles`)
+- **Motion:** a small hand-written layer in `src/lib/motion` (smooth scroll, custom cursor, magnetic buttons, scroll reveals, count-ups, sticky stacking cards). Respects `prefers-reduced-motion` and is switched off on touch devices where it makes no sense.
+- **Fonts:** Bricolage Grotesque, Instrument Serif, JetBrains Mono, Caveat via `next/font`
+- **Hosting:** Vercel
+
+## Project structure
+
+```txt
+portfolio/
+├── public/
+│   ├── Harshrajsinh_Vaghela_Resume.pdf
+│   ├── images/            # portrait
+│   └── og/og.png          # link-preview card
+├── src/
+│   ├── app/               # layout.tsx, page.tsx, icon.svg
+│   ├── components/        # Hero, About, Experience, Work, Skills, Contact, ...
+│   ├── data/              # all text content (profile, experience, projects, skills)
+│   ├── lib/motion/        # animation and pointer effects
+│   └── styles/            # base.css, components.css, sections.css
+├── next.config.ts
+├── package.json
+└── tsconfig.json
+```
+
+## Run locally
+
+Needs Node.js 20.9 or newer.
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
+npm run dev        # http://localhost:3000
 npm run build && npm start
 ```
 
-Needs Node 20.9 or newer (Next 16).
+## Edit the content
 
-## What's in it
+Everything you read on the site lives in `src/data`. Change the text there; the components don't need touching.
 
-| Effect | Where |
-| --- | --- |
-| Inertial wheel scrolling (native scroll still drives keyboard, touch, scrollbar) | `lib/motion/smooth-scroll.ts` |
-| Custom cursor with a trailing ring and `data-cursor="Open"` labels | `lib/motion/cursor.ts` |
-| Magnetic buttons, 3D tilt, mouse spotlight, hero glow | `lib/motion/pointer-fx.ts` |
-| Hero dot-grid that reacts to the pointer and ripples on click | `components/HeroCanvas.tsx` |
-| Scroll reveals and masked headline reveals | `lib/motion/reveal.ts` |
-| Scroll-scrubbed paragraph in About | `lib/motion/words.ts` |
-| Count-up numbers | `lib/motion/count.ts` |
-| Sticky stacking project cards | `lib/motion/stack.ts` + `.proj` in `sections.css` |
-| Scroll-velocity marquee | `lib/motion/marquee.ts` |
-| Parallax, scroll progress bar, hide-on-scroll nav | `parallax.ts`, `scroll-state.ts` |
+## Deploy
 
-Everything respects `prefers-reduced-motion`, switches off the cursor and smooth scroll on touch devices, and the page is fully readable if JavaScript fails (hidden states only apply once the `js` class is set, with a 6 second failsafe).
-
-## Edit your content
-
-All text lives in `src/data`:
-
-- `profile.ts`: name, links, email, phone, hero stats, rotating words, facts
-- `experience.ts`: the Visezy role, highlights, and the "what I worked on" list
-- `projects.ts`: the five stacking project cards (screenshots in `public/projects`)
-- `skills.ts`: skill tiers, pipeline steps, certifications
-
-To add a project, copy an entry in `projects.ts` and add WebP screenshots named `<base>-900.webp` and `<base>-1600.webp` to `public/projects`.
-
-Colours and spacing are CSS variables at the top of `src/styles/base.css`.
-
-## Deploy (Vercel)
-
-1. Push this folder to your GitHub repo and import it in Vercel. No settings to change.
-2. Add an environment variable `NEXT_PUBLIC_SITE_URL` with your real URL (for example `https://harshrajsinh.dev`) so link previews use absolute image URLs.
-3. Share the link on LinkedIn once to check the preview card (`public/og/og.png`).
-
-## Privacy of the Visezy work
-
-Everything under "What I worked on there" is private work. The data in `experience.ts` has no repo, live link or screenshot fields on purpose; keep it that way. Only descriptive text is allowed.
-
-## Keep it honest
-
-The skills section is grouped by depth on purpose (daily, used in projects, foundations). Before you send the link out, make sure every item in the first two groups is something you can explain in an interview.
+Import the repo in Vercel (no settings to change). Optionally set `NEXT_PUBLIC_SITE_URL` to your live URL so link previews use absolute image URLs.
