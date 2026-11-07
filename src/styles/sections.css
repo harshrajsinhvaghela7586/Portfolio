@@ -1058,7 +1058,7 @@ html:not(.js) .gauge__fill {
 .pipe {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   counter-reset: node;
 }
@@ -1164,7 +1164,23 @@ html:not(.js) .gauge__fill {
 }
 .certs li {
   display: grid;
+}
+.certs__link {
+  display: grid;
   gap: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+.certs__verify {
+  margin-top: 6px;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+.certs__link:hover .certs__verify,
+.certs__link:focus-visible .certs__verify {
+  color: var(--accent, #c8f560);
 }
 .certs strong {
   font-size: 1.15rem;

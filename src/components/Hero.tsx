@@ -56,7 +56,7 @@ export default function Hero() {
               <span className="sr-only">{roles.join(", ")}</span>
             </p>
             <p className="hero__lead">
-              Next.js, Node and React Native, from the database to the pixels. Five months in, with four websites and two mobile apps
+              Next.js, Node and React Native, from the database to the pixels. Six months in, with four websites and two mobile apps
               already shipped.
             </p>
             <div className="hero__cta">

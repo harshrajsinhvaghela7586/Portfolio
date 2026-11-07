@@ -1,7 +1,7 @@
 export const job = {
   company: "Visezy Solutions Pvt. Ltd.",
   role: "Software Developer Intern",
-  period: "Jun 2026 – Present",
+  period: "Jun 2026 – Nov 2026",
   place: "Remote",
   summary:
     "Full-stack work on production websites and mobile apps: the screen, the API behind it and the deploy that puts it live.",
@@ -111,18 +111,18 @@ export const shipped: Shipped[] = [
     title: "PetCard App",
     kind: "Mobile app · MERN backend",
     year: "2026",
-    status: "In development",
-    role: "Building both the app and the backend on my own.",
+    role: "Built both the app and the MERN backend on my own, and now testing it on real devices through Expo Go.",
     blurb:
-      "A pet-care app for profiles, health records, documents and daily care, with a game layer on top to keep owners coming back.",
+      "A pet-care app for profiles, health records, documents and daily care, with a game layer on top to keep owners coming back. The core features are built and it is in the testing phase.",
     points: [
       "Expo Router app with pet profiles, documents, reminders and an emergency card.",
-      "Sign-in with Google OAuth alongside email, backed by JWT sessions.",
+      "Google sign-in alongside email, backed by JWT sessions.",
       "Photo and document uploads to Cloudinary.",
       "Rewards where the server owns points, XP and levels, so they can't be faked from the app.",
       "A Gemini-powered assistant that only answers pet questions.",
       "Email notifications through Nodemailer.",
+      "Tested on real phones with Expo Go while bugs and rough edges get fixed.",
     ],
-    stack: ["React Native", "Expo Router", "Node.js", "Express", "MongoDB", "Google OAuth", "Cloudinary", "Gemini API", "Nodemailer"],
+    stack: ["React Native", "Expo", "Expo Go", "Expo Router", "Node.js", "Express", "MongoDB", "Google OAuth", "Cloudinary", "Gemini API", "Nodemailer"],
   },
 ];

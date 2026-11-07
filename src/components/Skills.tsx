@@ -57,8 +57,8 @@ export default function Skills() {
         <div className="container">
           <SectionHead no="05" label="How it ships" id="infra-title" lines={["From commit", <>to <i className="serif">production.</i></>]} />
           <p className="skills__intro" data-reveal>
-            I&rsquo;m a developer first, but I like knowing how my code reaches users. This is the path I use for deployments at work and
-            on my own projects: Git, GitHub Actions, Docker, then Vercel or Render.
+            Shipping is part of the job. My projects, at work and on my own, follow the same path: a pull request, an automated check
+            from GitHub Actions, then a live deploy on Vercel or Render.
           </p>
 
           <ol className="pipe" data-stagger="130">
@@ -76,8 +76,11 @@ export default function Skills() {
             <ul>
               {certs.map((c) => (
                 <li key={c.title}>
-                  <strong>{c.title}</strong>
-                  <span>{c.issuer}</span>
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="certs__link">
+                    <strong>{c.title}</strong>
+                    <span>{c.issuer}</span>
+                    <em className="certs__verify">View credential ↗</em>
+                  </a>
                 </li>
               ))}
             </ul>
